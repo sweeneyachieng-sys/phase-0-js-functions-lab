@@ -50,3 +50,4 @@ return finalAmount;
 }
 console.log(calculateDiscountedPrice(100,20));
 // end working perfectly
+module.exports = { calculateTax, convertToUppercase, findMaximum, isPalindrome, calculateDiscountedPrice };
