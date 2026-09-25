@@ -7,7 +7,8 @@
 // function 2
 function convertToUpperCase(text){ 
     return text.toUpperCase();
-}
+} 
+console.log(convertToUpperCase("hello world"));
 
 
    
@@ -37,10 +38,12 @@ console.log(isPalindrome(word))
 
 //f5
 function calculateDiscountedPrice(originalPrice, discountpercentage){
-return originalPrice -(originalPrice*(discountpercentage/100));
+let discountAmount = originalPrice * (discountpercentage / 100);
+let finalAmount = originalPrice - discountAmount;
+return finalAmount;
 }
 console.log(calculateDiscountedPrice(100,20));
 // end working perfectly
 
 
-module.exports = { calculateTax, convertToUppercase, findMaximum, isPalindrome, calculateDiscountedPrice };
+module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
