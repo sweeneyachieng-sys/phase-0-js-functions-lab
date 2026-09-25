@@ -1,10 +1,7 @@
- 
-function calculateTax (amount) {
-  let tax=( amount * 0.1 )
-  return tax 
-}
-let amoount = 100
-console.log(calculateTax(100 * 0.1))
+ function calculateTax (amount) {
+  return amount * 0.1;
+} 
+console.log(calculateTax(-50));
 //  ...................working perfectly
 
 
@@ -12,8 +9,7 @@ console.log(calculateTax(100 * 0.1))
 function convertToUppercase(text){ 
     return text.toUpperCase();
 }
-const text = "text";
-console.log(convertToUppercase(text))
+console.log(convertToUppercase("hello world"));
    
 // endfunction working perfectly
 
@@ -31,23 +27,20 @@ console.log(findMaximum(10, 20))
 
 //f4
 function isPalindrome(word){
-     let reversed = word.split('').reverse().join('');
-if (word === reversed){
-return true;
-}else{
-return false;
+    const reversed = word.split('').reverse().join('');
+    return word === reversed;
 }
-}
+
 let word = "noon"
 console.log(isPalindrome(word))
 //  working
 
 //f5
 function calculateDiscountedPrice(originalPrice, discountpercentage){
-let discountAmount =(originalPrice* discountpercentage)/100;
-let finalAmount = originalPrice - discountAmount;
-return finalAmount;
+return originalPrice -(originalPrice*(discountpercentage/100));
 }
 console.log(calculateDiscountedPrice(100,20));
 // end working perfectly
+
+
 module.exports = { calculateTax, convertToUppercase, findMaximum, isPalindrome, calculateDiscountedPrice };
