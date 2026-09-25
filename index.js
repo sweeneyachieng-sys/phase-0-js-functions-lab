@@ -1,7 +1,6 @@
  function calculateTax (amount) {
   return amount * 0.1;
-} 
-console.log(calculateTax(-50));
+}
 //  ...................working perfectly
 
 
@@ -9,7 +8,7 @@ console.log(calculateTax(-50));
 function convertToUppercase(text){ 
     return text.toUpperCase();
 }
-console.log(convertToUppercase("hello world"));
+
    
 // endfunction working perfectly
 
