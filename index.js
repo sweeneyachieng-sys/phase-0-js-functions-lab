@@ -5,7 +5,7 @@
 
 
 // function 2
-function convertToUppercase(text){ 
+function convertToUpperCase(text){ 
     return text.toUpperCase();
 }
 
